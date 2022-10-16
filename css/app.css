@@ -1,0 +1,299 @@
+:root{
+    --bc-gelo:rgb(237, 237, 237);
+    --azul-escuro:#022155;
+}
+
+*{padding: 0; margin: 0; list-style: none; box-sizing: border-box;}
+
+html{scrollbar-width: thin;}
+body{background-color: var(--bc-gelo);}
+
+body::-webkit-scrollbar{width: 10px; height: 8px; background-color: black;}
+body::-webkit-scrollbar-thumb{ background-color: grey; border-radius: 10px;}
+body::-webkit-scrollbar-track{height: 30px; width: 10px;}
+
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 99;
+    transition: 300ms ease-in-out;
+}
+
+.hamburg-logo{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--bc-gelo);
+}
+
+.hamb{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    transition: 300ms all ease-in-out;
+}
+
+.hamb-line{
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: var(--bc-gelo);
+    border-radius: 2px;
+    top: 9px;
+    transition: 300ms all ease-in-out;
+}
+
+.hamb-line::before,.hamb-line::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: var(--bc-gelo);
+    border-radius: 2px;
+    z-index: 2;
+    transition: 300ms all ease-in-out;
+}
+
+.hamb-line::before{top: -10px;}
+
+.hamb-line::after{top: 10px;}
+
+.logo{
+    font-size: 2rem;
+}
+
+.menu-desk{
+    display: none;
+}
+
+.hamb.hamb-active .hamb-line{
+    background: none;
+}
+
+.hamb.hamb-active .hamb-line::before{
+    transform: rotate(45deg);
+    top: 0;
+    transition: 300ms all ease-in-out;
+}
+
+.hamb.hamb-active .hamb-line::after{
+    transform: rotate(135deg);
+    top: 0;
+    transition: 300ms all ease-in-out;
+}
+
+/*Menu-mobile*/
+.menu-mobile{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url("../files/img/small/05.jpg") center center no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 97;
+    padding: 10px 15px;
+    display: none;
+    /* animation: animemenuin 600ms ease-in-out forwards; */
+}
+
+@keyframes animemenuin{
+    0%{
+        transform:translateX(-100vw);
+        opacity: 0.5;
+        transition: 5s all ease-in-out;
+    }
+
+    100%{
+        transform: translateX(0vw);
+        opacity: 1;
+        transition: 5s all ease-in-out;
+    }
+}
+
+@keyframes animemenuout{
+    0%{
+        transform:translateX(0vw);
+        opacity: 0.5;
+        transition: 5s all ease-in-out;
+    }
+
+    100%{
+        transform: translateX(-100vw);
+        opacity: 1;
+        transition: 5s all ease-in-out;
+    }
+}
+
+.header-menu-mobile{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: var(--bc-gelo);
+}
+
+.tegs-menu-mobile{
+    position: relative;
+    top: 15%;
+}
+
+.tegs-menu-mobile ul li{
+    position: relative;
+    padding: 15px 10px;
+}
+
+.tegs-menu-mobile ul li a{
+    color: var(--bc-gelo);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.tegs-social-mobile{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.tegs-social-mobile ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 2rem;
+}
+
+.tegs-social-mobile ul li a{
+    color: rgb(141, 141, 141);
+}
+
+/*Carrocel*/
+.container-carrocel{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-carrocel::-webkit-scrollbar{display: none;}
+
+.btns{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-reight{position: absolute; right: 0;}
+
+.arrow{
+    background: linear-gradient(to left,rgba(0,0,0,0.1), rgba(0,0,0,1));
+    width: 30px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--bc-gelo);
+    cursor: pointer;
+    opacity: 0.1;
+    z-index: 1;
+    height: 100%;
+}
+
+.arrow:nth-child(2){
+    right: 0;
+    background: linear-gradient(to left,rgba(0,0,0,1), rgba(0,0,0,0.1));
+}
+
+.arrow:hover{opacity: 1;}
+
+.carrocel{
+    position: absolute;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.carrocel::-webkit-scrollbar{display: none;}
+
+.galeria{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+}
+
+.img-galeria{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.img-visibilite{
+    display: block; 
+    scroll-behavior: smooth; 
+    transition: 600ms all ease-in-out ;
+    animation: slide-img 300ms ease-in-out forwards;
+    position: absolute;
+}
+@keyframes slide-img{
+    0%{
+        transform: translateX(100vw);
+        opacity:0 ;
+    }
+
+    100%{
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1024px){
+   /*Header*/
+   .hamb{display: none;}
+   
+   .menu-desk{
+       display: block;
+   }
+
+   .menu-desk ul{display: flex;gap: 0.5rem;}
+   .menu-desk ul:nth-child(2){justify-content: right;}
+
+   .menu-desk ul li{padding: 5px 10px; border-radius: 5px; cursor: pointer;}
+
+   .menu-desk ul li .barra-hover{
+       position: relative;
+       height: 3px;
+       border-radius: 3px;
+   }
+
+   #pesquisar{color: var(--bc-gelo); cursor: pointer;}
+   #pesquisar:hover{color: #022155;}
+   
+   .menu-desk ul li:hover > .barra-hover{background-color: #022155; animation: barraMenuDesk 600ms ease-in-out forwards;}
+
+   @keyframes barraMenuDesk {
+       to{
+           width: 100%;
+
+       }
+
+       from{
+           width: 0;
+       }
+   }
+
+   .menu-desk ul li a{
+       text-decoration: none;
+       color: var(--bc-gelo);
+       font-size: 1.2rem;
+   }
+}
