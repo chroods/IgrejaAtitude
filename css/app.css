@@ -1,5 +1,5 @@
 :root{
-    --bc-gelo:rgb(237, 237, 237);
+    --bc-gelo:#ededed;
     --azul-escuro:#022155;
 }
 
@@ -18,12 +18,14 @@ body::-webkit-scrollbar-track{height: 30px; width: 10px;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px;
     z-index: 99;
     transition: 300ms ease-in-out;
 }
 
 .hamburg-logo{
+    position: relative;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -259,15 +261,23 @@ body::-webkit-scrollbar-track{height: 30px; width: 10px;}
 @media (min-width: 1024px){
    /*Header*/
    .hamb{display: none;}
+
+   .hamburg-logo{width: 10%;}
    
    .menu-desk{
        display: block;
    }
 
-   .menu-desk ul{display: flex;gap: 0.5rem;}
+   .menu-desk ul{display: flex;gap: 0.5rem; width: 100%;}
    .menu-desk ul:nth-child(2){justify-content: right;}
 
-   .menu-desk ul li{padding: 5px 10px; border-radius: 5px; cursor: pointer;}
+   .menu-desk ul li{
+       position: relative;
+       padding: 5px; 
+       border-radius: 5px; 
+       cursor: pointer; 
+       text-align: center; 
+    }
 
    .menu-desk ul li .barra-hover{
        position: relative;
@@ -275,7 +285,14 @@ body::-webkit-scrollbar-track{height: 30px; width: 10px;}
        border-radius: 3px;
    }
 
-   #pesquisar{color: var(--bc-gelo); cursor: pointer;}
+   .menu-desk ul li ul{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+
+   #pesquisar{color: var(--bc-gelo); cursor: pointer; padding: 0 15px; background-color: #022155;}
    #pesquisar:hover{color: #022155;}
    
    .menu-desk ul li:hover > .barra-hover{background-color: #022155; animation: barraMenuDesk 600ms ease-in-out forwards;}
