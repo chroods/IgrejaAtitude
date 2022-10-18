@@ -1,5 +1,5 @@
 :root{
-    --bc-gelo:#ededed;
+     --bc-gelo:rgb(237, 237, 237);
     --azul-escuro:#022155;
 }
 
@@ -67,6 +67,7 @@ body::-webkit-scrollbar-track{height: 30px; width: 10px;}
 
 .logo{
     font-size: 2rem;
+    /*background-color: #022155;*/
 }
 
 .menu-desk{
