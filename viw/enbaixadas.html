@@ -4,13 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/embaixada.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/embaixada.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <meta name="robots" content="noindex">
     <meta name="description" content="Igreja Atitude Cristã">
     <meta name="description" content="Author: David Wanderson, Profissão: Programador Web, Linguagens: JavaScript e PHP">
 </head>
 <body>
+
+    <!--header-->
+    <header class="header">
+        <div class="hamburg-logo">
+            <div class="hamb"><div class="hamb-line"></div></div>
+            <div class="logo"><a href="http://localhost:5501">Atitude Cristã</a></div>
+        </div>
+
+        <div class="menu-desk">
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a><div class="barra-hover"></div></li>
+                <li><a href="./viw/enbaixadas.html">Embaixadas</a><div class="barra-hover"></div></li>
+                <li><a href="#agenda">Agenda</a><div class="barra-hover"></div></li>
+                <li><a href="#cursos">Cursos</a><div class="barra-hover"></div></li>
+                <li><a href="#eventos">Eventos</a><div class="barra-hover"></div>
+                    <ul>
+                        <li><a href="ins" class="subbarra-hover">Inscrições</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Localização">Localização</a><div class="barra-hover"></div></li>
+                <li><a href="#Video">Videos</a><div class="barra-hover"></div>
+                    <ul>
+                        <li><a href="#Video" class="subbarra-hover">Podcast</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Pastores">Pastores</a><div class="barra-hover"></div></li>
+                <li><a href="#contato">Contato</a><div class="barra-hover"></div></li>
+            </ul>
+            <ul>
+                <li><a href="#sobre"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#embaixadas"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#oferta"><i class="fab fa-youtube"></i></a></li>
+                <li><span id="pesquisar"><i class="fas fa-search"></i></span></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Menu mobile-->
+    <menu class="menu-mobile">
+       
+        <div class="tegs-menu-mobile">
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a><div class="barra-hover"></div></li>
+                <li><a href="#embaixadas">Embaixadas</a><div class="barra-hover"></div></li>
+                <li><a href="#agenda">Agenda</a><div class="barra-hover"></div></li>
+                <li><a href="#cursos">Cursos</a><div class="barra-hover"></div></li>
+                <li><a href="#eventos">Eventos</a><div class="barra-hover"></div></li>
+                <li><a href="#Localização">Localização</a><div class="barra-hover"></div></li>
+                <li><a href="#Video">Videos</a><div class="barra-hover"></div></li>
+                <li><a href="#Pastores">Pastores</a><div class="barra-hover"></div></li>
+                <li><a href="#contato">Contato</a><div class="barra-hover"></div></li>
+            </ul>
+        </div>
+
+        <div class="tegs-social-mobile">
+            <ul>
+                <li><a href="#sobre"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#embaixadas"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#oferta"><i class="fab fa-youtube"></i></a></li>
+                <li><span id="pesquisar"><i class="fas fa-search"></i></span></li>
+            </ul>
+        </div>
+    </menu>
     
     <div class="container-embaixadas">
         <div class="title-container">
@@ -210,5 +274,7 @@
 
         </div>
     </div>
+
+    <script src="../js/app.js"></script>
 </body>
 </html>

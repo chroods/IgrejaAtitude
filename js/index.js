@@ -5,7 +5,6 @@ const sections = document.querySelectorAll('.sections');
 const qtdImg = imgGaleria.length;
 let posit = 0;
 const heigthJanela = window.outerHeight;
-console.log(heigthJanela)
 
 //=============================== Carrocel===============================
 function times() {
