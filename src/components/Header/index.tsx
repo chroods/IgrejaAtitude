@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Menu } from "../Menu";
 
 import { 
     Container,
@@ -20,7 +20,6 @@ export function Header(){
 
     function handleClickMenu(){
         setMenuCliked(!menuCliked)
-        console.log(menuCliked)
     }
 
     return(
@@ -34,13 +33,15 @@ export function Header(){
             </LogoContainer>
 
             <ContainerButtonsHeader>
-                <ButtonHamburg onClick={handleClickMenu}>
+                {/* <ButtonHamburg onClick={handleClickMenu}>
                     {
-                        menuCliked === false ? <HamburgIncon name="GiHamburgerMenu" />
+                        menuCliked === false 
+                        ? <HamburgIncon name="GiHamburgerMenu" />
                         : <CloseMenu name="AiOutlineClose" />
                     }
                     
-                </ButtonHamburg>
+                </ButtonHamburg> */}
+                <Menu></Menu>
                 <PesquisaHeader name="BsSearch" />
             </ContainerButtonsHeader>
         </Container>
