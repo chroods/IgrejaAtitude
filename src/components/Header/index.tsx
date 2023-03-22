@@ -21,7 +21,6 @@ export function Header(){
 
     function handleClickMenu(){
         setMenuCliked(!menuCliked)
-        console.log(menuCliked)
     }
 
     return(
