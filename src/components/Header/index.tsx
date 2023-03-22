@@ -47,6 +47,8 @@ export function Header(){
                     <PesquisaHeader name="BsSearch" />
                 </ContainerButtonsHeader>
             </Container>
+            
+            <MenuLeft clicado={menuCliked} />
         </>
     )
 }

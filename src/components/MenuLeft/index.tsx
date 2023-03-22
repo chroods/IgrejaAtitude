@@ -1,9 +1,13 @@
 import React from "react";
 import { Container } from "./styles";
 
-export function MenuLeft(){
+interface Props{
+    clicado: boolean
+}
+
+export function MenuLeft({clicado}: Props){
     return(
-        <Container>
+        <Container clicado={clicado}>
             <ul>
                 <li>
                     <a href="#">Sobre nòs</a>

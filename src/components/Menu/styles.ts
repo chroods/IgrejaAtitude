@@ -14,6 +14,9 @@ export const Container = styled.div`
         font-weight: 400;
     }
 
+    li a{color:#222}
+    li a:hover{color:#000}
+
     @media (max-width: 1024px){
         display: none;
     }

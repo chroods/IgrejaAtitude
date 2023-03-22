@@ -56,7 +56,7 @@ export const ButtonHamburg = styled.button`
     border: none;
     cursor: pointer;
 
-    @media (min-width: 1024px){
+    @media (min-width: 1026px){
         display: none;
     }
 `
