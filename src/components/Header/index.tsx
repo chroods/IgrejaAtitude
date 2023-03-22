@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { Menu } from "../Menu";
+import { MenuLeft } from "../MenuLeft";
 
 import { 
     Container,
@@ -24,25 +25,29 @@ export function Header(){
     }
 
     return(
-        <Container>
-            <LogoContainer>
-                <IconLogo src="../../src/assets/logo.png" />
-                <GroupNameLogo>
-                    <TitleIgreja>Igreja</TitleIgreja>
-                    <NameLogo>Atitude Cristã</NameLogo>
-                </GroupNameLogo>
-            </LogoContainer>
+        <>
+            <Container>
+                <LogoContainer>
+                    <IconLogo src="../../src/assets/logo.png" />
+                    <GroupNameLogo>
+                        <TitleIgreja>Igreja</TitleIgreja>
+                        <NameLogo>Atitude Cristã</NameLogo>
+                    </GroupNameLogo>
+                </LogoContainer>
 
-            <ContainerButtonsHeader>
-                <ButtonHamburg onClick={handleClickMenu}>
-                    {
-                        menuCliked === false ? <HamburgIncon name="GiHamburgerMenu" />
-                        : <CloseMenu name="AiOutlineClose" />
-                    }
+                <ContainerButtonsHeader>
                     
-                </ButtonHamburg>
-                <PesquisaHeader name="BsSearch" />
-            </ContainerButtonsHeader>
-        </Container>
+                    <Menu />
+                    <ButtonHamburg onClick={handleClickMenu}>
+                        {
+                            menuCliked === false ? <HamburgIncon name="GiHamburgerMenu" />
+                            : <CloseMenu name="AiOutlineClose" />
+                        }
+                        
+                    </ButtonHamburg>
+                    <PesquisaHeader name="BsSearch" />
+                </ContainerButtonsHeader>
+            </Container>
+        </>
     )
 }

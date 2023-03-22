@@ -4,13 +4,14 @@ import {AiOutlineClose} from 'react-icons/ai'
 import {BsSearch} from 'react-icons/bs'
 
 export const Container = styled.div`
-position: relative;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #c4c4c4;
     padding: 10px;
+    z-index: 1;
 `
 
 export const LogoContainer = styled.div`
@@ -42,6 +43,7 @@ export const NameLogo = styled.text`
 
 export const ContainerButtonsHeader = styled.div`
     display: flex;
+    align-items: center;
     gap: 20px;
     margin-right: 10px;
 `
@@ -50,10 +52,16 @@ export const ButtonHamburg = styled.button`
     background: none;
     border: none;
     cursor: pointer;
+
+    @media (min-width: 1024px){
+        display: none;
+    }
 `
 
 export const HamburgIncon = styled(GiHamburgerMenu)`
-font-size: 18px;
+    font-size: 20px;
+    transition: 600ms ease-in-out all;
+    z-index: 3;
 `
 
 export const PesquisaHeader = styled(BsSearch)`
@@ -62,4 +70,6 @@ export const PesquisaHeader = styled(BsSearch)`
 
 export const CloseMenu = styled(AiOutlineClose)`
     font-size: 18px;
+    transition: 600ms all ease-in-out;
+    z-index: 3;
 `
