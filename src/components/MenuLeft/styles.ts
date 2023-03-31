@@ -63,6 +63,7 @@ export const Container = styled.div<Props>`
 
     @media (min-width: 1024px){
         transition: 600ms all ease-in-out;
+        display: none;
     }
 `
 
