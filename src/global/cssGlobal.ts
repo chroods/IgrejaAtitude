@@ -7,5 +7,6 @@ export const CssGlobal = createGlobalStyle`
         text-decoration: none;
         list-style: none;
         box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
     }
 `

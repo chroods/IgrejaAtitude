@@ -3,9 +3,6 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {AiOutlineClose} from 'react-icons/ai' 
 import {BsSearch} from 'react-icons/bs'
 
-const { innerWidth: width, innerHeight: height } = window;
-console.log(innerWidth, width);
-
 export const Container = styled.div`
     position: relative;
     width: 100%;
