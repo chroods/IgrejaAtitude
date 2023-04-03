@@ -28,6 +28,7 @@ export const IconLogo = styled.img`
 export const GroupNameLogo = styled.div`
     display: flex;
     flex-direction: column;
+    color: #000;
 `
 
 export const TitleIgreja = styled.text`

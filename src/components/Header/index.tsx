@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu } from "../Menu";
 import { MenuLeft } from "../MenuLeft";
+import { Link } from "react-router-dom";
 
 import { 
     Container,
@@ -26,13 +27,15 @@ export function Header(){
     return(
         <>
             <Container>
-                <LogoContainer>
-                    <IconLogo src="../../src/assets/logo.png" />
-                    <GroupNameLogo>
-                        <TitleIgreja>Igreja</TitleIgreja>
-                        <NameLogo>Atitude Cristã</NameLogo>
-                    </GroupNameLogo>
-                </LogoContainer>
+                <Link to="/">
+                    <LogoContainer>
+                        <IconLogo src="../../src/assets/logo.png" />
+                        <GroupNameLogo>
+                            <TitleIgreja>Igreja</TitleIgreja>
+                            <NameLogo>Atitude Cristã</NameLogo>
+                        </GroupNameLogo>
+                    </LogoContainer>
+                </Link>
 
                 <ContainerButtonsHeader>
                     

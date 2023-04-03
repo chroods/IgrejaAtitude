@@ -1,40 +1,41 @@
 import React from "react";
 import {Container} from "./styles";
+import { Link } from 'react-router-dom';
 
 export function Menu(){
     return(
         <Container>
             <ul>
                 <li>
-                    <a href="#">Sobre nòs</a>
+                    <Link className="linkMenu" to="sobre">Sobre nòs</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <a href="#">Embaixadas</a>
+                    <Link to="/embaixadas">Embaixadas</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <a href="#">Agenda</a>
+                    <Link to="sobre">Agenda</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <a href="#">Cursos</a>
+                    <Link to="sobre">Cursos</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <a href="#">Eventos</a>
+                    <Link to="sobre">Eventos</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <a href="#">Video</a>
+                    <Link to="sobre">Video</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <a href="#">Pastores</a>
+                    <Link to="sobre">Pastores</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <a href="#">Contato</a>
+                    <Link to="sobre">Contato</Link>
                     <div className="barraHover"></div>
                 </li>
             </ul>
