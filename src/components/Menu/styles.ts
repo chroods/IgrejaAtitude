@@ -45,8 +45,8 @@ export const Container = styled.div`
 
     .barraHover{
         position: relative;
-        bottom: 0;
-        height: 2px;
+        top: 5px;
+        height: 3px;
         width: 100%;
         z-index: 1;
         animation: barraHoverEnd 1s ease-in-out both;
