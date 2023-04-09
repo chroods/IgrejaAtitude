@@ -1,4 +1,4 @@
-const slide = [
+export const slide = [
     {
         id: 1,
         img: "../src/assets/03.jpg",
@@ -29,7 +29,7 @@ const slide = [
     }
 ]
 
-const embaixadasData = [
+export const embaixadasData = [
     {
         name: "ATIVOS DO REINO",
         lider: "RODRIGO GOMES RODRIGUES",
@@ -99,5 +99,3 @@ const embaixadasData = [
     }
 
 ]
-
-export default slide;

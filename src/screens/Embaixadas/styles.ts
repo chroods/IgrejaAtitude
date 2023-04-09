@@ -21,7 +21,7 @@ export const Container = styled.div`
         position: relative;
         width: 100%;
         object-fit: cover;
-        height: 70vh;
+        height: calc(100vh - 100px);
     }
 
     .desc-legenda-embaixada{
@@ -73,15 +73,6 @@ export const Container = styled.div`
         }
     }
 
-    /*Container*/
-    .container-embaixadas{
-        position: relative;
-        width: 100%;
-        margin-top: 30px;
-        padding: 10px 15px;
-        font-family: 'Roboto', sans-serif;
-    }
-
     @media (min-width:1023px){
         /*background*/
         .desc1-embaixada{font-size: 2rem;}
@@ -91,4 +82,16 @@ export const Container = styled.div`
         .box-embaixadas{max-width: 250px;}
     }
 
+`;
+
+export const ContentBoxs = styled.div`
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 `;

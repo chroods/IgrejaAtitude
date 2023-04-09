@@ -8,7 +8,7 @@ import {
  } from './styles'
 import {HiArrowLeft} from 'react-icons/hi';
 import {HiArrowRight} from 'react-icons/hi'
-import slide from '../../services/FotosSlide';
+import {slide} from '../../services/FotosSlide';
 
 
 export function Slide(){
