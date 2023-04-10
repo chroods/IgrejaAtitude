@@ -35,7 +35,7 @@ export function Menu(){
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <Link to="sobre">Contato</Link>
+                    <Link to="contato">Contato</Link>
                     <div className="barraHover"></div>
                 </li>
             </ul>

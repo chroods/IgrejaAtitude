@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App';
 import { Home } from '../src/screens/Home/index';
 import { Embaixada } from './screens/Embaixadas';
+import { Contato } from './screens/Contato';
 import { ErrorPagina } from './screens/PaginaError';
 import {
   createBrowserRouter,
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "embaixadas",
         element: <Embaixada />
+      },
+      {
+        path: "contato",
+        element: <Contato />
       }
     ]
   },
