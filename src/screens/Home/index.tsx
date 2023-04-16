@@ -1,9 +1,22 @@
 import React from "react";
-import { Container } from "./styles";
 
 import { Header } from "../../components/Header";
 import { Slide } from "../../components/Slide";
 import { Footer } from "../../components/Footer";
+
+import { 
+    Container,
+    SobreGreja,
+    HeaderSobreIgreja,
+    ContentSobrePrega,
+    BoxTitleSobre,
+    ContainerImgsReference,
+    BoxGaleriaImgPrega,
+    TitleImgPrega,
+    ContentAtitude,
+    BoxGaleriaImgAtitude,
+    BoxTitleAtitude,
+} from "./styles";
 
 export function Home(){
     return(
@@ -13,29 +26,40 @@ export function Home(){
 
             {/* Conteudo referente a igreja */}
 
-            <div className="sobre-greja">
-                <div className="header-sobre-igreja">
+            <SobreGreja>
+                <HeaderSobreIgreja>
                     <div className="title-sobre">Atitude Cristã</div>
-                </div>
+                </HeaderSobreIgreja>
 
-                <div className="content-sobre-prega">
-                    <div className="box-title-sobre">
-                        <h1 className="title-prega">Pregando a palavra do senhor</h1>
-                        <h4 className="subi-title-prega">PARA MANIFESTAR A SUA GLÓRIA NO MUNDO</h4>
-                    </div>
+                <ContentSobrePrega>
+                    <BoxTitleSobre>
+                        <h1 className="title-prega">Pregando a <br /> palavra do senhor</h1>
+                        <h4 className="subi-title-prega">PARA MANIFESTAR <br />A SUA GLÓRIA NO MUNDO</h4>
+                    </BoxTitleSobre>
 
-                    <div className="box-galeria-img-prega"></div>
-                </div>
+                    <ContainerImgsReference>
+                        <BoxGaleriaImgPrega>
 
-                <div className="content-atitude">
-                    <div className="box-galeria-img-atitude"></div>
+                            <img src="../../src/assets/07.jpg" className="imgPregando" />
+                            <img src="../../src/assets/09.jpg" className="imgPregando" />
+                            <img src="../../src/assets/08.jpg" className="imgPregando" />
+                            <img src="../../src/assets/12.jpg" className="imgPregando" />
+                            <img src="../../src/assets/13.jpg" className="imgPregando" />
+                        </BoxGaleriaImgPrega>
 
-                    <div className="box-title-atitude">
+                        <TitleImgPrega>Pregando a palavra de Deus e conectando pessoas.</TitleImgPrega>
+                    </ContainerImgsReference>
+                </ContentSobrePrega>
+
+                <ContentAtitude>
+                    <BoxGaleriaImgAtitude></BoxGaleriaImgAtitude>
+
+                    <BoxTitleAtitude>
                         <h1>Não pregamos só a palavra do senhor</h1>
                         <h4>MAS TAMBÉM A ATITUDE</h4>
-                    </div>
-                </div>
-            </div>
+                    </BoxTitleAtitude>
+                </ContentAtitude>
+            </SobreGreja>
             <Footer />
         </Container>
     )
