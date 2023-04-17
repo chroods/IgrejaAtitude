@@ -7,7 +7,7 @@ export function Menu(){
         <Container>
             <ul>
                 <li>
-                    <Link className="linkMenu" to="sobre">Sobre nòs</Link>
+                    <Link className="linkMenu" to="/sobre">Sobre nòs</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
@@ -15,27 +15,27 @@ export function Menu(){
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <Link to="sobre">Agenda</Link>
+                    <Link to="/agenda">Agenda</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <Link to="sobre">Cursos</Link>
+                    <Link to="/cursos">Cursos</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <Link to="sobre">Eventos</Link>
+                    <Link to="/eventos">Eventos</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <Link to="sobre">Video</Link>
+                    <Link to="/videos">Video</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <Link to="sobre">Pastores</Link>
+                    <Link to="/pastores">Pastores</Link>
                     <div className="barraHover"></div>
                 </li>
                 <li>
-                    <Link to="contato">Contato</Link>
+                    <Link to="/contato">Contato</Link>
                     <div className="barraHover"></div>
                 </li>
             </ul>

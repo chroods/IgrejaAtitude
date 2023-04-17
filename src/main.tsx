@@ -9,6 +9,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom'
+import { Agenda } from './screens/Agenda';
+import { Cursos } from './screens/Cursos';
+import { Eventos } from './screens/Eventos';
+import { Pastores } from './screens/Pastores';
+import { Videos } from './screens/Videos';
+import { Sobre } from './screens/Sobre';
 
 const router = createBrowserRouter([
   {
@@ -21,8 +27,32 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
+        path: "sobre",
+        element: <Sobre />
+      },
+      {
         path: "embaixadas",
         element: <Embaixada />
+      },
+      {
+        path: "agenda",
+        element: <Agenda />
+      },
+      {
+        path: "cursos",
+        element: <Cursos />
+      },
+      {
+        path: "eventos",
+        element: <Eventos />
+      },
+      {
+        path: "videos",
+        element: <Videos />
+      },
+      {
+        path: "pastores",
+        element: <Pastores />
       },
       {
         path: "contato",
