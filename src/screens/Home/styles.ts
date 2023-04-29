@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import theme from '../../global/theme';
 
 export const Container = styled.div`
     flex: 1;
@@ -6,19 +7,17 @@ export const Container = styled.div`
 
 export const SobreGreja = styled.div`
     width: 100%;
-    padding: 20px;
-    margin: 20px 0;
 `;
 
 export const HeaderSobreIgreja = styled.div`
     text-align: center;
-    margin: 0 0 80px 0;
+    margin: 40px 0 80px 0;
     padding: 20px 0 40px 0;
 
     .title-sobre{
         font-size: 2rem;
         font-weight: 700;
-        color: #0D265F;
+        color: ${theme.colorsLigth.shape};
     }
 `;
 
@@ -26,6 +25,7 @@ export const ContentSobrePrega = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to top left,  ${theme.colorsLigth.backgrond_secondary} , ${theme.colorsLigth.backgrond_primary} 70%);
 `;
 
 export const BoxTitleSobre = styled.div`
@@ -54,7 +54,7 @@ export const ContainerImgsReference = styled.div`
     justify-content: space-between;
     margin-top: 50px;
     gap: 40px;
-    padding: 0 20px;
+    padding: 40px;
 `;
 
 export const BoxGaleriaImgPrega = styled.div`
@@ -138,17 +138,57 @@ export const BoxGaleriaImgPrega = styled.div`
 export const TitleImgPrega = styled.h1`
     position: relative;
     width: 30%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
-    margin-top: 80px;
+    text-align: center;
 
     @media (max-width: 1026px) {
         width: 100%;
     }
 `;
 
-export const ContentAtitude = styled.div``;
+export const ContentAtitude = styled.div`
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: ${theme.colorsLigth.backgrond_ligth};
+    /* background-image: url('../../src/assets/backAtitude2.jpg');
+    background-attachment: fixed;
+    background-position: center; */
+`;
 
-export const BoxGaleriaImgAtitude = styled.div``;
+export const BoxTitleAtitude = styled.div`
+    margin: 40px 0;
 
-export const BoxTitleAtitude = styled.div``;
+    h1{
+        font-size: 2rem;
+        font-weight: 700;
+        color: ${theme.colorsLigth.shape_dark};
+    }
+    h4{
+        font-size: 1rem;
+        font-weight: 400;
+        color: ${theme.colorsLigth.text};;
+    }
+`;
+
+export const BoxGaleriaImgAtitude = styled.div`
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 40px;
+    padding: 40px 0;
+    .imgPregando{
+        width: calc(100% / 2 - 20px);
+        object-fit: contain;
+    }
+
+    @media (max-width: 701px) {
+        .imgPregando{
+            width: 100%;
+        }
+    }
+`;
+

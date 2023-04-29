@@ -27,11 +27,11 @@ export function Home(){
             {/* Conteudo referente a igreja */}
 
             <SobreGreja>
-                <HeaderSobreIgreja>
-                    <div className="title-sobre">Atitude Cristã</div>
-                </HeaderSobreIgreja>
-
                 <ContentSobrePrega>
+                    
+                    <HeaderSobreIgreja>
+                        <div className="title-sobre">Atitude Cristã</div>
+                    </HeaderSobreIgreja>
                     <BoxTitleSobre>
                         <h1 className="title-prega">Pregando a <br /> palavra do senhor</h1>
                         <h4 className="subi-title-prega">PARA MANIFESTAR <br />A SUA GLÓRIA NO MUNDO</h4>
@@ -52,12 +52,15 @@ export function Home(){
                 </ContentSobrePrega>
 
                 <ContentAtitude>
-                    <BoxGaleriaImgAtitude></BoxGaleriaImgAtitude>
 
                     <BoxTitleAtitude>
-                        <h1>Não pregamos só a palavra do senhor</h1>
-                        <h4>MAS TAMBÉM A ATITUDE</h4>
+                        <h1>Não pregamos só a palavra do senhor,</h1>
+                        <h4>MAS TAMBÉM A ATITUDE !.</h4>
                     </BoxTitleAtitude>
+                    <BoxGaleriaImgAtitude>
+                        <img src="../../src/assets/10.jpg" className="imgPregando" />
+                        <img src="../../src/assets/11.jpg" className="imgPregando" />
+                    </BoxGaleriaImgAtitude>
                 </ContentAtitude>
             </SobreGreja>
             <Footer />

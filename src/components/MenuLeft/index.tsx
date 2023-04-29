@@ -5,6 +5,7 @@ import {
     Container,
     RedesMenu
  } from "./styles";
+import { Link } from "react-router-dom";
 
 interface Props{
     clicado: boolean;
@@ -17,10 +18,10 @@ export function MenuLeft({clicado}: Props){
         <Container clicado={clicado}>
             <ul>
                 <li className={clasMenu}>
-                    <a href="#">Sobre nòs</a>
+                    <Link to="#">Sobre nòs</Link>
                 </li>
                 <li className={clasMenu}>
-                    <a href="#">Embaixadas</a>
+                    <Link to="/embaixadas">Embaixadas</Link>
                 </li>
                 <li className={clasMenu}>
                     <a href="#">Agenda</a>
