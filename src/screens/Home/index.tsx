@@ -40,11 +40,11 @@ export function Home(){
                     <ContainerImgsReference>
                         <BoxGaleriaImgPrega>
 
-                            <img src="../../src/assets/07.jpg" className="imgPregando" />
-                            <img src="../../src/assets/09.jpg" className="imgPregando" />
-                            <img src="../../src/assets/08.jpg" className="imgPregando" />
-                            <img src="../../src/assets/12.jpg" className="imgPregando" />
-                            <img src="../../src/assets/13.jpg" className="imgPregando" />
+                            <img src="./assets/07.jpg" className="imgPregando" />
+                            <img src="./assets/09.jpg" className="imgPregando" />
+                            <img src="./assets/08.jpg" className="imgPregando" />
+                            <img src="./assets/12.jpg" className="imgPregando" />
+                            <img src="./assets/13.jpg" className="imgPregando" />
                         </BoxGaleriaImgPrega>
 
                         <TitleImgPrega>Pregando a palavra de Deus e conectando pessoas.</TitleImgPrega>
@@ -58,8 +58,8 @@ export function Home(){
                         <h4>MAS TAMBÉM A ATITUDE !.</h4>
                     </BoxTitleAtitude>
                     <BoxGaleriaImgAtitude>
-                        <img src="../../src/assets/10.jpg" className="imgPregando" />
-                        <img src="../../src/assets/11.jpg" className="imgPregando" />
+                        <img src="./assets/10.jpg" className="imgPregando" />
+                        <img src="./assets/11.jpg" className="imgPregando" />
                     </BoxGaleriaImgAtitude>
                 </ContentAtitude>
             </SobreGreja>

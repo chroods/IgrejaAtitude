@@ -21,7 +21,7 @@ export function Footer(){
             <GoupHeader>
                 <Link to="/">
                     <LogoContainer>
-                        <IconLogo src="../../src/assets/logo.png" />
+                        <IconLogo src="./assets/logo.png" />
                         <GroupNameLogo>
                             <TitleIgreja>Igreja</TitleIgreja>
                             <NameLogo>Atitude Cristã</NameLogo>
