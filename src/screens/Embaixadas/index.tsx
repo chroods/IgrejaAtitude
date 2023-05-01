@@ -14,7 +14,7 @@ export function Embaixada(){
             <Header />
 
             <div className="background-embaixada">
-                <img src="../../src/assets/bc.jpg" alt="" />
+                <img src="./assets/bc.jpg" alt="" />
                 <div className="desc-legenda-embaixada">
                     <h3 className="desc1-embaixada">Mais que uma Embaixada</h3>
                     <h1 className="desc2-embaixada">Uma Familia!</h1>
